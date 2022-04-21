@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template("/login.html")
 
-@app.route("/login", methods = ["POST"])
+@app.route("/index", methods = ["POST"])
 def login():
     username = request.json.get("username")
     password = request.json.get("password")
