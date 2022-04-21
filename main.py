@@ -3,6 +3,8 @@ from flask import Flask, request, render_template, jsonify, url_for, redirect
 import csv
 app = Flask(__name__)
 
+print("hi")
+
 @app.route("/")
 def index():
     return render_template("index.html")
